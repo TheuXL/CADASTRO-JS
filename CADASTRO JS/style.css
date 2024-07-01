@@ -1,0 +1,50 @@
+/* General Styling */
+QMainWindow {
+    background-color: #f0f0f0; 
+    font-family: "Segoe UI", sans-serif; /* Apply font to main window */
+}
+
+QWidget 
+
+QTabWidget::pane {
+    border: none; 
+}
+
+QTabBar::tab {
+    background-color: #ffffff; 
+    padding: 10px;
+    border-radius: 5px;
+    /* Add hover effect for tabs */
+    transition: background-color 0.2s ease; /* Smooth transition */
+}
+
+QTabBar::tab:selected {
+    /* Use a slightly darker shade for selected tab */
+    background-color: hsl(210, 10%, 90%); 
+}
+
+QTabBar::tab:hover {
+    /* Light up on hover */
+    background-color: hsl(210, 10%, 95%); 
+}
+
+/* Button Styling */
+QPushButton {
+    background-color: #007bff; /* Primary blue color */
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    /* Add hover effect */
+    transition: background-color 0.2s ease; /* Smooth transition */
+}
+
+QPushButton:hover {
+    background-color: #0056b3; /* Slightly darker shade on hover */
+}
+
+/* Optional: Add focus styles for accessibility */
+QPushButton:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* Add custom focus indicator */
+}
